@@ -26,7 +26,13 @@ export default function App() {
         />
         <button onClick={handleButton}>Get Year</button>
       </div>
-      <div>{displayResult}</div>
+      <div>
+        {displayResult !== "" && displayResult !== 0 ? (
+          <p>Wins: {displayResult}</p>
+        ) : (
+          <p>No data</p>
+        )}
+      </div>
     </div>
   );
 }
