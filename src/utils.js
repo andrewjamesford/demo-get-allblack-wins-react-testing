@@ -2,7 +2,7 @@ const getAllBlacksWins = (matchData, year) => {
   if (!Array.isArray(matchData) || !matchData.length) {
     throw new Error("Match data not provided.");
   }
-  console.log(isNaN(year));
+
   if (isNaN(year) || typeof year === "string") {
     throw new Error("Year must be a number.");
   }
