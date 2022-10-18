@@ -7,6 +7,7 @@ import matchData from "./data.json";
 export default function App() {
   const [year, setYear] = useState(2012);
   const [displayResult, setDisplayResult] = useState("");
+
   const handleButton = () => {
     const result = getAllBlacksWins(matchData, parseInt(year));
     setDisplayResult(result);
