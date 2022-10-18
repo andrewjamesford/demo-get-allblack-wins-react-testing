@@ -41,6 +41,7 @@ describe("getAllBlacksWins", () => {
     [-2012, 0],
     [20130, 0],
     [1999, 0],
+    [1, 0],
   ])("getAllBlacksWins get year %p and wins %p", (year, expected) => {
     const result = getAllBlacksWins(matchData, year);
     expect(result).toBe(expected);
